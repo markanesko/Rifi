@@ -66,5 +66,3 @@ To Do:
   
 
 *Thanks a lot for all the feedback and suggestions, Feel free to raise an issue, submit feature request.*
-
-### [My website](https://aayush.wtf)
