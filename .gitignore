@@ -1,4 +1,6 @@
 Pipfile
 .DS_Store
 Pipfile.lock
-
+PythonApp/.DS_Store
+PythonApp/Pipfile
+PythonApp/Pipfile.lock
