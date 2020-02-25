@@ -10,7 +10,8 @@ Tested on : MacOS | Windows 10 | Manjaro *Linux*
 ![controlls](Images/controlls.png)Multimedia Controller
 
 
-IP Input field.![ip](/Users/aayushpokharel/Desktop/RC/Rifi/Images/ip.png)
+IP Input field
+![ip](/Users/aayushpokharel/Desktop/RC/Rifi/Images/ip.png)
 
 
 > Installation:
