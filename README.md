@@ -13,7 +13,7 @@ Multimedia Controller.
 ![controlls](Images/controlls.png)
 
 
-ipaddress input field.
+IPAddress Input Field.
 
 ![ip](Images/ip.png)
 
@@ -36,7 +36,6 @@ ipaddress input field.
 > `python main.py` *on the host computer*
 >
 > *Open App > input ip of the computer > Save > Scroll to multimedia.*
-
 
 
 ---
