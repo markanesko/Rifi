@@ -13,7 +13,7 @@ Multimedia Controller.
 ![controlls](Images/controlls.png)
 
 
-ipaddress input field.
+IPAddress Input Field.
 
 ![ip](Images/ip.png)
 
@@ -22,9 +22,13 @@ ipaddress input field.
 > Installation:
 >
 > `git clone "repo"`
->
+> `cd PythonApp`
 > `pip install -r requirements.txt`
+> Complie the watchApp/Remote Controller.xcodeproj and install in apple watch
 
+*will add an ipa for easy installation later*
+
+*will add a universal in-browser app soon*
 
 
 > Usage:
@@ -32,7 +36,6 @@ ipaddress input field.
 > `python main.py` *on the host computer*
 >
 > *Open App > input ip of the computer > Save > Scroll to multimedia.*
-
 
 
 ---
