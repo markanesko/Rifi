@@ -10,12 +10,12 @@ Tested on : MacOS | Windows 10 | Manjaro *Linux*
 
 Multimedia Controller.
 
-![controlls](Images/controlls.png)
+![controlls](Images/wc.png)
 
 
 IPAddress Input Field.
 
-![ip](Images/ip.png)
+![ip](Images/wp.png)
 
 
 ---
