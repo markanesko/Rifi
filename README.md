@@ -13,7 +13,7 @@ Multimedia Controller.
 ![controlls](Images/wc.png)
 
 
-IPAddress Input Field.
+IP address Input Field.
 
 ![ip](Images/wp.png)
 
