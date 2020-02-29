@@ -12,8 +12,22 @@ import Foundation
 var url = ""
 
 class InterfaceController: WKInterfaceController {
-
+    
     @IBOutlet weak var IpPortLabel: WKInterfaceLabel!
+    
+    @IBOutlet weak var InputGroup: WKInterfaceGroup!
+    @IBOutlet weak var doneBtn: WKInterfaceButton!
+    
+    @IBOutlet weak var showButton: WKInterfaceButton!
+    
+    
+    @IBAction func showBtn() {
+        InputGroup.setHidden(false)
+        doneBtn.setEnabled(true)
+        url = ""
+        IpPortLabel.setText("")
+        showButton.setHidden(true)
+    }
     
     @IBAction func btn1() {
         url += "1"
@@ -76,17 +90,19 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func btnClear() {
+        doneBtn.setEnabled(true)
         url = ""
         IpPortLabel.setText("")
     }
     var newUrl = ""
-    @IBAction func changeIP() {
-        newUrl = "http://"+url
-        url = newUrl
-        url += "/?key="
-        newUrl = url
-
-        print(url)
+    
+    @IBAction func changeIP() { //note this is for the donw button (green done button)
+        InputGroup.setHidden(true)
+        showButton.setHidden(false)
+        newUrl = "http://"+url;
+        url = newUrl;
+        url += "/?key=";
+        newUrl = url;
     }
 
     func PostValue(key:String){
