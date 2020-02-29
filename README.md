@@ -20,12 +20,12 @@ IP address Input Field.
 
 ---
 > Installation:
->
-> `git clone "repo"`
 
-> `cd PythonApp`
+ `git clone "repo"`
 
-> `pip install -r requirements.txt`
+ `cd PythonApp`
+
+ `pip install -r requirements.txt`
 
 > Complie the watchApp/Remote Controller.xcodeproj and install in apple watch
 
