@@ -34,12 +34,12 @@ def index():
 
 
     # presses key as it receives via GET
+    # I Know this is the worst way of error handling "feel free to sugesst any improvement"
     try:
         press(key)
         sleep(0.3)
     except:
         pass
-        print("try again")
 
     
     # this step is kinda reduntant for now
