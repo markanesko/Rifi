@@ -21,15 +21,13 @@ IP address Input Field.
 ---
 **Installation**
 
- `git clone "repo"`
+ `git clone "repo"` or Download .zip/.tar file from the [releases](https://github.com/Aayush9029/Rifi/releases).
 
  `cd PythonApp`
 
  `pip install -r requirements.txt`
 
 Complie the watchApp/Remote Controller.xcodeproj and install in apple watch
-
-*will add an ipa for easy installation later*
 
 *will add a universal in-browser app soon*
 
