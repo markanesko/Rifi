@@ -19,7 +19,7 @@ IP address Input Field.
 
 
 ---
-> Installation:
+**Installation**
 
  `git clone "repo"`
 
@@ -27,7 +27,7 @@ IP address Input Field.
 
  `pip install -r requirements.txt`
 
-> Complie the watchApp/Remote Controller.xcodeproj and install in apple watch
+Complie the watchApp/Remote Controller.xcodeproj and install in apple watch
 
 *will add an ipa for easy installation later*
 
