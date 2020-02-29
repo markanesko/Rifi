@@ -64,11 +64,11 @@ Uses:
 
 To Do:
 
-- Refactor and Document the code.
-
+- Display ip and port
+- Randomize the port
+- Make a web ui
 - Add a barcode scanner for easy-login. *Instead of inputting the ip scan a barcode?*
 
-- Package the python and iOS application.
 
   
 
