@@ -12,6 +12,8 @@ from flask import Flask, render_template, request
 from random import randint
 from time import sleep
 import socket
+import qrcode
+from PIL import Image
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.connect(("8.8.8.8", 80)) #this sees if device is connected to internet
@@ -21,6 +23,10 @@ s.close()
 #this finds the current local ip of the machine
 port_num = randint(49152,65535) # generates a random port  
 
+ask = input("do you want to see the qr Code? ")
+if ask.lower() == 'y' or ask.lower() == 'yes':
+    qrCode = qrcode.make(f"http://{ip}:{port_num}")
+    qrCode.show()
 print('-'*10)
 print(f"\n\n\n\n\n Type this in Apple watch app =>  {ip}:{port_num}\n\n\n\n")
 print('-'*10)
