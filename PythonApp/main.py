@@ -16,12 +16,12 @@ import qrcode
 from PIL import Image
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-s.connect(("8.8.8.8", 80)) #this sees if device is connected to internet
+s.connect(("8.8.8.8", 80))  # this sees if device is connected to internet
 ip = s.getsockname()[0]
 s.close()
 
-#this finds the current local ip of the machine
-port_num = randint(49152,65535) # generates a random port  
+# this finds the current local ip of the machine
+port_num = randint(49152, 65535)  # generates a random port
 
 ask = input("do you want to see the qr Code? ")
 if ask.lower() == 'y' or ask.lower() == 'yes':
@@ -38,7 +38,6 @@ def index():
 
     render_template("index.html", key=key)
 
-
     # presses key as it receives via GET
     # I Know this is the worst way of error handling "feel free to sugesst any improvement"
     try:
@@ -47,9 +46,9 @@ def index():
     except:
         pass
 
-    
     # this step is kinda reduntant for now
     return render_template("index.html", key=key)
 
-# change the port to any number 8000 to 65535 
+
+# change the port to any number 8000 to 65535
 app.run(host="0.0.0.0", port=port_num)
