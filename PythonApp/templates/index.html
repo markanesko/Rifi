@@ -6,8 +6,119 @@
     <title>Rifi</title>
   </head>
   <body>
-    Will implement a virtual media player soon.
-    Nothing to see here for now.
-    Open your watch app.
+    <style>
+      body {
+        background-color: #f1f3f6;
+      }
+      ::selection {
+        background-color: none;
+      }
+      button {
+        border: none;
+        outline: none;
+        border-radius: 25%;
+        color: rgba(24, 1, 1, 0.555);
+        font-size: 2.2rem;
+      }
+      .wrapper {
+        padding: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(250px, auto);
+      }
+
+      .two {
+        background-size: 60%;
+        padding: 20px;
+        background-image: url("static/vu.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .three {
+        grid-column: 1;
+        grid-row: 2;
+
+        background-size: 50%;
+        padding: 20px;
+        background-image: url("static/fast.png");
+        background-position: center;
+        background-repeat: no-repeat;
+
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+      .four {
+        background-size: 50%;
+        padding: 20px;
+        background-image: url("static/fast.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-column: 3;
+        grid-row: 2;
+      }
+      .five {
+        background-size: 60%;
+        padding: 20px;
+        background-image: url("static/dv.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-column: 2;
+        grid-row: 3;
+      }
+      .six {
+        background-size: 80%;
+        padding: 20px;
+        background-image: url("static/pause.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-column: 2;
+        grid-row: 2;
+      }
+
+      .container {
+        width: 100%;
+        height: 97vh;
+      }
+
+      .cta {
+        outline: none;
+        /* background: #f1f3f6; */
+        box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+          inset 0 0 20px rgba(255, 255, 255, 0),
+          7px 7px 15px rgba(55, 84, 170, 0.15), -7px -7px 20px white,
+          inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+        transition: box-shadow 399ms ease-in-out;
+      }
+      .cta:hover {
+        box-shadow: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+          inset -7px -7px 20px white, 0px 0px 4px rgba(255, 255, 255, 0.2);
+      }
+    </style>
+    <div class="wrapper">
+      <button
+        onclick="window.location.href = '/?key=up';"
+        class="two cta"
+      ></button>
+      <button
+        onclick="window.location.href = '/?key=right';"
+        class="three cta"
+      ></button>
+      <button
+        onclick="window.location.href = '/?key=left';"
+        class="four cta"
+      ></button>
+
+      <button
+        onclick="window.location.href = '/?key=down';"
+        class="five cta"
+      ></button>
+      <button
+        onclick="window.location.href = '/?key=space';"
+        class="six cta"
+      ></button>
+    </div>
   </body>
 </html>
