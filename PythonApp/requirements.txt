@@ -1,2 +1,4 @@
 pyautogui
 flask
+qrcode==6.1
+Pillow
