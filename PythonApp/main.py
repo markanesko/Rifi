@@ -33,21 +33,24 @@ print('-'*10)
 app = Flask(__name__)
 @app.route("/")
 def index():
+
+    return render_template("index.html")
+
+
+@app.route("/press")
+def do_press():
     # query is key and the default value is None
     key = request.args.get("key", "None")
 
-    render_template("index.html", key=key)
-
     # presses key as it receives via GET
-    # I Know this is the worst way of error handling "feel free to sugesst any improvement"
+    success = True
     try:
         press(key)
         sleep(0.3)
     except:
-        pass
+        success = False
 
-    # this step is kinda reduntant for now
-    return render_template("index.html", key=key)
+    return {"press": success}
 
 
 # change the port to any number 8000 to 65535

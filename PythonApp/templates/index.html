@@ -6,27 +6,43 @@
     <title>Rifi</title>
     <link rel="stylesheet" href="../static/style.css" />
   </head>
+  
+  <script>
+function mysubmit(key) {
+	fetch('./press?key=' + key)
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+	if (! data.press){
+		alert("Error in processing button");
+	}
+    console.log(data);
+  });
+}
+  
+  </script>
   <body>
     <div class="wrapper">
       <button
-        onclick="window.location.href = '/?key=up';"
+        onclick="mysubmit('up')"
         class="two cta"
       ></button>
       <button
-        onclick="window.location.href = '/?key=right';"
+        onclick="mysubmit('right')"
         class="three cta"
       ></button>
       <button
-        onclick="window.location.href = '/?key=left';"
+        onclick="mysubmit('left')"
         class="four cta"
       ></button>
 
       <button
-        onclick="window.location.href = '/?key=down';"
+        onclick="mysubmit('down')"
         class="five cta"
       ></button>
       <button
-        onclick="window.location.href = '/?key=space';"
+        onclick="mysubmit('space')"
         class="six cta"
       ></button>
     </div>
