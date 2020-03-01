@@ -64,13 +64,8 @@ Uses:
 ---
 
 To Do:
-
-- Display ip and port
-- Randomize the port
-- Make a web ui
-- Add a barcode scanner for easy-login. *Instead of inputting the ip scan a barcode?*
-
+- Use multimedia buttons instead of keyboard buttons.
 
   
-
-*Thanks a lot for all the feedback and suggestions, Feel free to raise an issue, submit feature request.*
+Thanks a lot to:
+- [kvosbur](https://github.com/kvosbur)
