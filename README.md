@@ -9,8 +9,8 @@ Tested on : MacOS | Windows 10 | Manjaro *Linux*
 
 
   Watch Connect View</br>
-  <img src="Images/wc.png" width="128" ></br>
-  Watch Medial Player View</br>
+  <img src="Images/wc.png" width="128" >
+  Watch Medial Player View
   <img src="Images/wp.png" width="128" ></br>
   Phone Web Controler View</br>
   <img src="Images/ips.png" width="256">
