@@ -14,7 +14,7 @@ Tested on : MacOS | Windows 10 | Manjaro *Linux*
     Watch Medial Player View
   <img src="Images/wp.png" width="128" >
     Phone Web Controler View
-  <img src="sImages/ips.png" width="256">
+  <img src="Images/ips.png" width="256">
 </p>
 
 
