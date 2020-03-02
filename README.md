@@ -16,6 +16,13 @@ Tested on : MacOS | Windows 10 | Manjaro *Linux*
 ![ip](Images/wp.png)
 
 
+<p align="center">
+  <img src="Images/wc.png" width="128" >
+  <img src="Images/wp.png" width="1286" >
+  <img src="sImages/iph.png" width="256">
+</p>
+
+
 ---
 **Installation**
 
