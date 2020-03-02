@@ -29,7 +29,7 @@ Complie the watchApp/Remote Controller.xcodeproj and install in apple watch
 *will add a universal in-browser app soon*
 
 
-> Usage:
+### Usage:
 
 > `python main.py` *on the host computer*
 
