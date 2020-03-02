@@ -33,9 +33,9 @@ Complie the watchApp/Remote Controller.xcodeproj and install in apple watch
 
 > `python main.py` *on the host computer*
 
-> *Open App > input ip of the computer > Save > Scroll to multimedia.*
-
 > *Select Y on show barcode* > *Scan barcode* > Go to the link.
+
+> (For apple watch app) *Open App > input ip of the computer > Save > Scroll to multimedia.*
 
 ---
 
