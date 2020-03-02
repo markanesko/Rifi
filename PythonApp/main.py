@@ -20,8 +20,9 @@ s.connect(("8.8.8.8", 80))  # this sees if device is connected to internet
 ip = s.getsockname()[0]
 s.close()
 
-# this finds the current local ip of the machine
-port_num = randint(49152, 65535)  # generates a random port
+# port_num = randint(49152, 65535)  # generates a random port
+
+port_num = 8000
 
 ask = input("do you want to see the qr Code? ")
 if ask.lower() == 'y' or ask.lower() == 'yes':
