@@ -15,9 +15,6 @@ Tested on : MacOS | Windows 10 | Manjaro *Linux*
 
 ![ip](Images/wp.png)
 
-### Mobile Web app
-
-![Mobile Web app](Images/ips.png | width=100)
 
 ---
 **Installation**
