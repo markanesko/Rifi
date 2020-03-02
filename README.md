@@ -1,4 +1,4 @@
-## **RIFI v1.003**
+## **RIFI v1.2**
 This is the official repo for Wireless Multimedia controller App/Program "RIFI"
 
 Tested on : MacOS | Windows 10 | Manjaro *Linux*
