@@ -17,7 +17,7 @@ Tested on : MacOS | Windows 10 | Manjaro *Linux*
 
 ### Mobile Web app
 
-![Mobile Web app](Images/ips.png| width=100)
+![Mobile Web app](Images/ips.png | width=100)
 
 ---
 **Installation**
