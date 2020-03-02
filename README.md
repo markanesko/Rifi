@@ -60,7 +60,9 @@ Uses:
 ---
 
 To Do:
+- Remove Port Option from apple watch app and use static port for connection. *will do so in next release*
 - Use multimedia buttons instead of keyboard buttons.
+
 
   
 
