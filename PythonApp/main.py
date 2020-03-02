@@ -14,27 +14,26 @@ from time import sleep
 import socket
 import qrcode
 from PIL import Image
+import qrcode_terminal
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.connect(("8.8.8.8", 80))  # this sees if device is connected to internet
 ip = s.getsockname()[0]
 s.close()
 
-# port_num = randint(49152, 65535)  # generates a random port
-
 port_num = 8000
 
 ask = input("do you want to see the qr Code? ")
 if ask.lower() == 'y' or ask.lower() == 'yes':
-    qrCode = qrcode.make(f"http://{ip}:{port_num}")
-    qrCode.show()
+    qrcode_terminal.draw(f'http://{ip}:{port_num}')
 print('-'*10)
-print(f"\n\n\n\n\n Type this in Apple watch app =>  {ip}:{port_num}\n\n\n\n")
+print(f"\n Type this in Apple watch app =>  {ip}:{port_num}\n")
 print('-'*10)
+
+
 app = Flask(__name__)
 @app.route("/")
 def index():
-
     return render_template("index.html")
 
 
@@ -47,7 +46,7 @@ def do_press():
     success = True
     try:
         press(key)
-        sleep(0.3)
+        sleep(0.1)
     except:
         success = False
 
